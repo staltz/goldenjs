@@ -9,9 +9,10 @@
   background-image: -ms-linear-gradient(bottom, rgb(15,0,66) 74%, rgb(21,1,82) 26%);
   background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.74, rgb(15,0,66)),color-stop(0.26, rgb(21,1,82)));
 }
-
-.golden {
+h1.golden {
   font-family: 'Vollkorn', serif;
+  font-style: italic;
+  font-size: 120px;
 }
 
 /*
