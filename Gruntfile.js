@@ -21,10 +21,19 @@ module.exports = function(grunt) {
           'jquery.golden.min.js': 'jquery.golden.js'
         }
       }
+    },
+    copy: {
+      files: {
+        expand: true,
+        cwd: './',
+        src: ['*golden*.js'],
+        dest: 'docs/js/'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.registerTask('default', ['jshint', 'uglify']);
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.registerTask('default', ['jshint', 'uglify', 'copy']);
 };
