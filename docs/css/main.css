@@ -1,1 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic);
 
+.jumbotron {
+  color: #ccc;
+  background-image: linear-gradient(bottom, rgb(15,0,66) 74%, rgb(21,1,82) 26%);
+  background-image: -o-linear-gradient(bottom, rgb(15,0,66) 74%, rgb(21,1,82) 26%);
+  background-image: -moz-linear-gradient(bottom, rgb(15,0,66) 74%, rgb(21,1,82) 26%);
+  background-image: -webkit-linear-gradient(bottom, rgb(15,0,66) 74%, rgb(21,1,82) 26%);
+  background-image: -ms-linear-gradient(bottom, rgb(15,0,66) 74%, rgb(21,1,82) 26%);
+  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.74, rgb(15,0,66)),color-stop(0.26, rgb(21,1,82)));
+}
+
+.golden {
+  font-family: 'Vollkorn', serif;
+}
+
+/*
+gradient text
+
+background: -webkit-linear-gradient(rgb(255, 49, 31), rgb(255, 231, 52));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: bold;
+text-shadow: none;
+font-size: 120%;
+*/
