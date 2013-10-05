@@ -14,17 +14,3 @@ h1.golden {
   font-style: italic;
   font-size: 120px;
 }
-
-/* gold metallic #D4AF37 */
-/* dark gold #4D3F13 */
-
-/*
-gradient text
-
-background: -webkit-linear-gradient(rgb(255, 49, 31), rgb(255, 231, 52));
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-weight: bold;
-text-shadow: none;
-font-size: 120%;
-*/
