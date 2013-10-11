@@ -41,15 +41,13 @@
       };
 
       plugin.updateGradient = function(factor) {
-        var _firstColor, _secondColor;
         var weakFactor = (factor < 0)? -Math.sqrt(Math.sqrt(-factor)) : Math.sqrt(Math.sqrt(factor));
-        if(factor < 0) {
-          _firstColor = blend(_goldDark, _goldMetallic, 0.3+(0.7*(1+factor)));
-          _secondColor = blend(_goldDark, _goldMetallic, 1+weakFactor);
-        }
-        else {
-          _firstColor = blend(_goldDark, _goldMetallic, 1-weakFactor);
-          _secondColor = blend(_goldDark, _goldMetallic, 0.3+(0.7*(1-factor)));
+        var _firstColor = blend(_goldDark, _goldMetallic, 0.3+(0.7*(1+factor)));
+        var _secondColor = blend(_goldDark, _goldMetallic, 1+weakFactor);
+        if(factor > 0) {
+          var temp = _firstColor;
+          _firstColor = _secondColor;
+          _secondColor = temp;
         }
         $element.css('background', '-webkit-linear-gradient('+_firstColor+','+_secondColor+')');
       };
